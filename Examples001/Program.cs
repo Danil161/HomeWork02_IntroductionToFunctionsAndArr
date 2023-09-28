@@ -3,15 +3,14 @@
 //782 -> 8
 //918 -> 1
 
-using System.IO.Compression;
-
 int Prompt(string message)
 {
-    System.Console.Write(message);
+    Console.Write(message);
     string value = Console.ReadLine();
     int result = Convert.ToInt32(value);
     return result;
 }
+
 int n = Prompt("Введите трёзначное число = ");
 if (n < 100 || n >= 1000)
 {
